@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="simu.js" defer></script>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        #formulario{
+            margin: 0 auto;
+            max-width: 400px;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <head><h1>Compra de Boletos</h1></head>
+    <form id="formulario">
+        <div style="padding: 10px;"> 
+            <label for="salta" class="form-label" style="padding-right: 10px;">Origen</label>
+            <label for="salta" class="form-label" style="border: 1px solid white;background-color: white;color: black; width: 100px;text-align: center;">Salta</label>
+        </div>
+            <label for="opcion" class="form-label" style="padding: 10px;">Destino</label>
+            <select style="padding-left: 20px" id="destino">
+            <option value="opcion1">BUE</option>
+            <option value="opcion2">COR</option>
+            <option value="opcion3">MDZ</option>
+            </select>
+
+        <div style="padding: 10px;">
+            <label for="checkbox" class="form-label">IDA: </label>
+            <input type="checkbox" value="activo" id="ida">
+        </div>
+
+        <div style="padding: 10px;">
+            <label for="checkbox" class="form-label">Vuelta: </label>
+            <input type="checkbox" value="activo" id="vuelta">
+        </div>
+
+        <div style="padding: 10px;">
+            <label for="ida">Fecha ida:</label>
+            <input type="date" id="fecha_ida">
+        </div>
+
+        <div style="padding: 10px;">
+            <label for="vuelta" class="form-label">Fecha Vuelta:</label>
+            <input type="date" id="fecha_vuelta">
+        </div>
+        
+        <div style="padding: 10px;">
+            <label for="pasajero" class="form-label">Pasajeros</label>
+            <input type="number" class="form-control" id="pasajeros">
+        </div>
+
+        <div style="padding: 10px;">
+            <button type="button" class="btn btn-primary" onclick="calcular_precio()">Simular costos</button>
+        </div>
+        <div style="padding: 10px;">
+            <label for="Prec" class="form-label">Precio</label>
+            <div id="contenedor" style="width: 200px; height: 30px; background-color: white; color: black; text-align: center;">
+            </div>
+        </div>
+
+    </form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
